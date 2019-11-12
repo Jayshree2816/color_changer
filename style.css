@@ -1,3 +1,10 @@
-li {
+span {
     list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #80808040;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-right: 10px;
+    color: #fff
 }
