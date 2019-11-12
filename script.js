@@ -5,7 +5,20 @@ $(function(){
          alert("Please Enter the Tag name")
          e.preventDefault();
       } else {
-         $("#list").append("<span>" + tag + "</span>") 
+         var check = $('#list').text()
+         var valueUpper = tag.toUpperCase()
+         var listUpper =  check.toUpperCase()
+         var valueLower = tag.toLowerCase()
+         var listLower =  check.toLowerCase()
+         if((check.indexOf(tag) < 0)){
+            $("#list").append("<span class='test'>" + tag + "</span>") 
+         } else {
+            if((valueLower === listLower ) && (valueUpper === listUpper)){
+               alert('Name found');
+               e.preventDefault();
+            }
+
+         }
       }
         return false
    })
