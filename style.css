@@ -7,6 +7,6 @@ span {
     border-radius: 3px;
     margin-right: 10px;
     color: #fff;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 

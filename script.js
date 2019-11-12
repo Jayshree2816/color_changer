@@ -6,18 +6,11 @@ $(function(){
          e.preventDefault();
       } else {
          var check = $('#list').text()
-         var valueUpper = tag.toUpperCase()
-         var listUpper =  check.toUpperCase()
-         var valueLower = tag.toLowerCase()
-         var listLower =  check.toLowerCase()
-         if((check.indexOf(tag) < 0)){
+         if((check.toLowerCase().indexOf(tag.toLowerCase()) < 0)){
             $("#list").append("<span class='test'>" + tag + "</span>") 
          } else {
-            if((valueLower === listLower ) && (valueUpper === listUpper)){
                alert('Name found');
                e.preventDefault();
-            }
-
          }
       }
         return false
