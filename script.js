@@ -9,8 +9,8 @@ $(function(){
          if((check.toLowerCase().indexOf(tag.toLowerCase()) < 0)){
             $("#list").append("<span class='test'>" + tag + "</span>") 
          } else {
-               alert('Name found');
-               e.preventDefault();
+            alert('Name found');
+            e.preventDefault();
          }
       }
         return false
